@@ -28,7 +28,7 @@ outputs:
     type: File
   - id: output_bam
     outputSource:
-      - gatk_apply_bqsr/output_bam
+      - gatk_apply_bqsr/output
     type: File
 
 steps:
