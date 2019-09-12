@@ -43,7 +43,7 @@ steps:
     out:
       - id: output
     run: >-
-      command_line_tools/gatk_base_recalibrator_4.1.0.0/gatk_base_recalibrator_4.1.0.0.cwl
+      command_line_tools/gatk_4.1.0.0/gatk_base_recalibrator.cwl
     label: GATK Base Recalibrator
   - id: gatk_apply_bqsr
     in:
@@ -56,7 +56,7 @@ steps:
     out:
       - id: output
     run: >-
-      command_line_tools/gatk_apply_bqsr_4.1.0.0/gatk_apply_bqsr_4.1.0.0.cwl
+      command_line_tools/gatk_4.1.0.0/gatk_apply_bqsr.cwl
     label: GATK Apply BQSR
 requirements:
   - class: SubworkflowFeatureRequirement
