@@ -14,7 +14,9 @@ inputs:
       - .fai
       - ^.dict
   - id: bam
-    type: File
+    type: File 
+    secondaryFiles:
+      - ^.bai
   - id: known_sites
     type:
       type: array
@@ -30,6 +32,8 @@ outputs:
     outputSource:
       - gatk_apply_bqsr/output
     type: File
+    secondaryFiles:
+      - ^.bai
 
 steps:
   - id: gatk_base_recalibrator
